@@ -1,0 +1,33 @@
+# AppleIntelligence 分流规则（完整版）
+# 基于 ddgksf2013/Filter 原列表，整合社区维护补充
+# Sources: RocM301/Apple-Rule · KooriMoe/solid-dollop
+# Update 20260812
+# 适用于 Surge / Loon / Clash(Mihomo) / Quantumult X（rule-set / 规则订阅）
+
+# --- 核心网关 / AI 请求入口 ---
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,ls.apple.com
+
+# --- Private Cloud Compute (PCC) / 中继 ---
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+
+# --- Mask / 令牌与中继 DNS ---
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,mask-api.icloud.com
+DOMAIN-SUFFIX,mask.apple-dns.net
+DOMAIN-SUFFIX,mask-api.fe.apple-dns.net
+DOMAIN-SUFFIX,mask-t.apple-dns.net
+
+# --- Siri / 内容查询兜底 ---
+DOMAIN-SUFFIX,apps.mzstatic.com
+DOMAIN-KEYWORD,siri
